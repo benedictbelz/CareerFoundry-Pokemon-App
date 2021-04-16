@@ -1,4 +1,22 @@
-alert('Hello world');
-
-let favoriteFood = "Apple";
-document.write(favoriteFood);
+let pokemonList = [
+	{
+		name: "Charmander",
+		height: 0.6,
+		types: ["fire", "steel"],
+	},
+	{
+		name: "Bulbasaur",
+		height: 0.7,
+		types: ["grass", "poison"],
+	},
+	{
+		name: "Squirtle",
+		height: 0.5,
+		types: ["water", "steel"],
+	},
+	{
+		name: "Pikachu",
+		height: 0.4,
+		types: ["electric", "psychic"],
+	},
+];
