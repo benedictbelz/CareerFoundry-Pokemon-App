@@ -1,5 +1,4 @@
 let pokemonRepository = (function () {
-
 	let pokemonList = [
 		{
 			name: "Charmander",
@@ -31,21 +30,33 @@ let pokemonRepository = (function () {
 		return pokemonList;
 	}
 
-	return {
-		add: add,
-		getAll: getAll
-	};
-
-})();
-
-pokemonRepository.getAll().forEach(function(e) {
-	
-	let note = "";
-
-	if (e.height >= 0.7) {
-		note = " - Wow, that's big!"
+	function showDetails(pokemon) {
+		console.log(pokemon.name);
 	}
 
-	document.write(e.name+" (height: "+e.height+")"+note+"\n");
+	function addListItem(pokemon) {
+		let list = document.querySelector(".pokemon-list");
+		let listItem = document.createElement("li");
+		let button = document.createElement("button");
 
+		button.innerHTML = pokemon.name;
+		button.classList.add("pokemon-button");
+
+		listItem.appendChild(button);
+		list.appendChild(listItem);
+
+		button.addEventListener("click", function() {
+			showDetails(pokemon);
+		});
+	}
+
+	return {
+		add: add,
+		getAll: getAll,
+		addListItem: addListItem,
+	};
+})();
+
+pokemonRepository.getAll().forEach(function (e) {
+	pokemonRepository.addListItem(e);
 });
