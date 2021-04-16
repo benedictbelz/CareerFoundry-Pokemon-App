@@ -21,14 +21,14 @@ let pokemonList = [
 	},
 ];
 
-for (let i = 0; i < pokemonList.length; i++) {
+pokemonList.forEach(function(e) {
 	
-	let current = pokemonList[i];
 	let note = "";
 
-	if (current.height >= 0.7) {
+	if (e.height >= 0.7) {
 		note = " - Wow, that's big!"
 	}
 
-	document.write(current.name+" (height: "+current.height+")"+note+"\n");
-}
+	document.write(e.name+" (height: "+e.height+")"+note+"\n");
+
+});
