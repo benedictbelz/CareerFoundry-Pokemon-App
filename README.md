@@ -2,7 +2,7 @@
 
 Pokemon App lets you know about the height and types of different pokemons.
 
-https://user-images.githubusercontent.com/43958228/136847932-489caea4-49f5-482f-900e-610d805078e2.mov
+https://user-images.githubusercontent.com/43958228/136848980-7e7d859f-d117-4cb6-8440-a048556d3585.mov
 
 ## Objective
 
