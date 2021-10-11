@@ -1,4 +1,4 @@
-# CareerFoundry: Pokemon App
+Pokemon App
 
 https://user-images.githubusercontent.com/43958228/136848980-7e7d859f-d117-4cb6-8440-a048556d3585.mov
 
